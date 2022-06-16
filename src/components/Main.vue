@@ -197,15 +197,8 @@ export default {
       //对弹出层中的表单赋值
       console.log(index, row);
       this.form1.Id = row.Id;
-      // this.form1.name = row.name;
-      // this.form1.number = row.number;
     },
     handleSet1() {
-      // var params = {
-      //   id: this.form.id,
-      //   name: this.form.name,
-      //   number: this.form.number,
-      // };
       axios
         .get(
           ` http://127.0.0.1:3007/update?Id=${this.form1.Id}&name=${this.form1.name}&money=${this.form1.money}`
